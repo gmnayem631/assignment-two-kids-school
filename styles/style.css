@@ -1,10 +1,18 @@
 /* Importing Quicksand google font */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
+/* Importing Raleway google font */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
 .quicksand {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
   font-weight: 400;
+  font-style: normal;
+}
+.raleway {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
   font-style: normal;
 }
 * {
@@ -50,6 +58,43 @@
 }
 #admission-color {
   color: rgb(93, 88, 239);
+}
+
+.kinder-card {
+  background: linear-gradient(
+      180deg,
+      rgb(222, 245, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+
+.elementary-card {
+  background: linear-gradient(
+      180deg,
+      rgb(255, 244, 220),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+
+.middle-card {
+  background: linear-gradient(
+      180deg,
+      rgb(238, 225, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+
+.kinder-read {
+  color: rgb(100, 200, 255);
+}
+.elementary-read {
+  color: rgb(240, 170, 0);
+}
+.middle-read {
+  color: rgb(135, 0, 255);
 }
 
 /* navigation bar related styles */
@@ -98,13 +143,21 @@
 
 .banner-content {
   max-width: 610px;
-  margin-top: 115px;
+  margin: 115px 48px 115px 0px;
 }
 
 .banner-title {
   font-size: 3rem;
   font-weight: 700;
   margin: 24px 0px;
+}
+
+#empowering {
+  color: rgb(254, 163, 1);
+}
+
+#towards-vision {
+  color: rgb(1, 172, 253);
 }
 
 .banner-subtitle {
@@ -117,6 +170,79 @@
   max-width: 435px;
   max-height: 535px;
 }
+
+/* Main section */
+main {
+  background-image: url("../assets/bg.png");
+}
+
+/* Standard curriculum section */
+.curriculum {
+  max-width: 1077px;
+  margin: 60px auto;
+}
+.curriculum-title {
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.curriculum-cards {
+  margin-top: 80px;
+  justify-content: space-between;
+  gap: 25px;
+}
+.card {
+  max-height: 476.78px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 0.94px solid rgb(222, 245, 255);
+  border-radius: 15px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title {
+  color: rgb(32, 32, 32);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.card-description {
+  color: rgb(128, 128, 128);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.read {
+  max-width: 120px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: 32px;
+}
+
+.buttons {
+  width: 130px;
+  margin: 80px auto;
+}
+.btn-arrow {
+  border-radius: 30px;
+  background: rgb(254, 163, 1);
+  width: 45px;
+  height: 45px;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
 /* Making responsive */
 /* @media screen and (max-width: 576px) {
   .hamburger {
