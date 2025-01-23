@@ -170,12 +170,10 @@
   max-width: 435px;
   max-height: 535px;
 }
-
-/* Main section */
+/* Main section styles */
 main {
   background-image: url("../assets/bg.png");
 }
-
 /* Standard curriculum section */
 .curriculum {
   max-width: 1077px;
@@ -207,9 +205,10 @@ main {
 
 .card-title {
   color: rgb(32, 32, 32);
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-top: 30px;
+  padding: 10px;
 }
 
 .card-description {
@@ -241,6 +240,80 @@ main {
   font-weight: 600;
   border: none;
   cursor: pointer;
+}
+
+/* Classroom related styles */
+
+.our-story {
+  background: url(image),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+  flex-direction: column;
+  justify-content: center;
+}
+/* .our-story > div {
+  margin: 0 auto;
+} */
+.story-title {
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.classroom {
+  background: rgb(255, 255, 255);
+  border-radius: 16px;
+}
+
+.classroom-description {
+  color: rgb(102, 102, 102);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgb(102, 102, 102);
+  font-family: Raleway;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px;
+}
+.classroom-image {
+  border-radius: 16px 16px 0px 0px;
+}
+
+.card-container {
+  height: 630.52px;
+  width: 1077px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  margin: 80px auto;
+  gap: 20px;
+}
+
+.classroom-title {
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  margin: 32px 55px 90px 48px;
+  font-weight: 700;
+}
+
+.card-container .classroom {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+.article-card {
+  background: rgb(255, 255, 255);
+  border-radius: 16px;
+}
+.article-card > img {
+  border-radius: 16px 16px 0px 0px;
+}
+
+.view-button {
+  margin: 0 auto;
+}
+
+/* footer related styles */
+.footer {
+  background: rgb(1, 172, 253);
 }
 
 /* Making responsive */
