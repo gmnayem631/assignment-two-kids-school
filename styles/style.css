@@ -134,6 +134,10 @@
   display: none;
 }
 
+.text-flow {
+  background-color: rgb(191, 233, 169);
+}
+
 /* Banner related styles */
 
 .banner {
@@ -322,11 +326,7 @@ main {
   background: rgb(255, 255, 255);
   border-radius: 16px;
 }
-.article-card .card-button {
-  background: rgb(149, 178, 38);
-  top: 87%;
-}
-.article-card:nth-child(3) .card-button {
+.article-card:nth-child(2) .card-button {
   background: rgb(93, 88, 240);
 }
 .article-card > img {
