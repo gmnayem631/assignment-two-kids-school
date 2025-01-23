@@ -130,7 +130,7 @@
 }
 
 .hamburger {
-  visibility: hidden;
+  display: none;
 }
 
 /* Banner related styles */
@@ -387,14 +387,37 @@ main {
   max-height: 40px;
 }
 
+.display-hide {
+  display: none;
+}
+
 /* Making responsive */
-/* @media screen and (max-width: 576px) {
-  .hamburger {
-    visibility: visible;
-  }
-  .menu,
+
+@media screen and (max-width: 576px) {
   .logo-text,
-  .btn-secondary {
+  .menu,
+  .navbar > .button {
     display: none;
   }
-} */
+  .hamburger {
+    display: block;
+  }
+  .hamburger > img {
+    width: 30px;
+    height: 30px;
+  }
+  .navbar {
+    padding-inline: 4px;
+    border-bottom: 2px solid orange;
+    padding-bottom: 20px;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .banner-content {
+    margin: 0;
+  }
+}
