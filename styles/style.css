@@ -314,6 +314,77 @@ main {
 /* footer related styles */
 .footer {
   background: rgb(1, 172, 253);
+  padding: 118px 220px 168px 135px;
+}
+
+.footer-item {
+  align-items: center;
+}
+
+.footer-logo-text {
+  color: rgb(255, 255, 255);
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.footer-message {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.footer-content {
+  align-items: center;
+}
+
+.footer-content > img {
+  filter: invert(15%);
+}
+
+.footer-message {
+  margin-top: 30px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 990px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.footer-list-title {
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.footer-list-links {
+  list-style: none;
+  margin-top: 25px;
+}
+
+.footer-list-item {
+  padding: 15px;
+}
+
+.footer-list-item a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.social-title {
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.social-logo {
+  border-radius: 4px;
+  max-width: 40.61px;
+  max-height: 40px;
 }
 
 /* Making responsive */
