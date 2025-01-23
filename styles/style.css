@@ -204,6 +204,24 @@ main {
   align-items: center;
 }
 
+.card-image-container {
+  position: relative;
+}
+
+.card-image-container .card-button {
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 42px;
+  background: rgb(60, 216, 232);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  left: 5%;
+  top: 93%;
+}
+
 .card-title {
   color: rgb(32, 32, 32);
   font-size: 1rem;
@@ -303,6 +321,13 @@ main {
 .article-card {
   background: rgb(255, 255, 255);
   border-radius: 16px;
+}
+.article-card .card-button {
+  background: rgb(149, 178, 38);
+  top: 87%;
+}
+.article-card:nth-child(3) .card-button {
+  background: rgb(93, 88, 240);
 }
 .article-card > img {
   border-radius: 16px 16px 0px 0px;
